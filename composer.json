@@ -1,0 +1,11 @@
+{
+  "name" : "site1vba",
+  "version" : "1.0",
+  "require" : {
+    "zendframework/zendframework1" : "=1.12.3"
+  },
+  "repositories" : [ {
+    "type" : "composer",
+    "url" : "https://packagist.org/"
+  } ]
+}
