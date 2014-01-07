@@ -1,7 +1,0 @@
-{
-	"name": "site1",
-	"main": "public/index.php",
-	"dependencies": {
-		"bootstrap" : ">=3.0.3"
-	}
-}
