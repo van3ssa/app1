@@ -10,7 +10,7 @@
  */
 
 class ContactController extends Zend_Controller_Action{
-	public function indextAction(){
+	public function indexAction(){
 		
 	}
 }
