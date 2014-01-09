@@ -4,4 +4,31 @@
 ?>
 Index
 <br/>
-<a href="<?php echo $this->url(array(), 'contactIndex'); ?>">Nous contacter</a>
+<a href="<?php echo $this->url(array(), 'contactIndex'); ?>">Nous contacter</a><br/>
+
+<!-- Affichage des articles -->
+<?php 
+foreach ($this->affichageArticles as $indiceArticle => $article )
+{
+?>
+	<div id="droite" style="width: 800px; display:inline-block; vertical:inline-top;">
+		<h2><?php echo $article['articles_titre']; ?></h2>
+		<p><?php echo $article['articles_contenu']; ?></p>
+	</div>
+	<div id="gauche"  style="width: 200px; display:inline-block; vertical:inline-top; margin-top:-30px;">
+		<p><span style="font-weight: bold; font-size:11px;">Auteur : </span><?php 
+			foreach($this->auteurs as $indiceAuteur => $auteur)
+			{
+				if($auteur['auteurs_id'] == $article['articles_auteur'])
+				{
+					echo $auteur['auteurs_nom'] . ' ' . $auteur['auteurs_prenom'] ; ?></p>
+			<?php
+				}
+			}
+			?>
+		<p><span style="font-weight: bold; font-size:11px;">Date :</span> <?php echo $article['articles_date']; ?></p>
+	</div>
+<?php 
+}
+?>
+

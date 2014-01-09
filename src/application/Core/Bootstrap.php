@@ -9,6 +9,6 @@
  *  @author		vba <basset.vanessa@yahoo.fr>
  *  
  */
-class Bootstrap extends Zend_Application_Module_Bootstrap{
+class Core_Bootstrap extends Zend_Application_Module_Bootstrap{
 
 }
