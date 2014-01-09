@@ -1,6 +1,6 @@
 <?php 
 
-class Core_Model_AffichageArticles{
+class Core_Model_Articles{
 	private $id;
 	private $titre;
 	private $contenu;
@@ -11,6 +11,7 @@ class Core_Model_AffichageArticles{
 	 */
 	public function setDate($date) {
 		$this->date = $date;
+		return $this;
 	}
 
 	/**
@@ -53,6 +54,7 @@ class Core_Model_AffichageArticles{
 	 */
 	public function setId($id) {
 		$this->id = $id;
+		return $this;
 	}
 
 	/**
@@ -60,6 +62,7 @@ class Core_Model_AffichageArticles{
 	 */
 	public function setTitre($titre) {
 		$this->titre = $titre;
+		return $this;
 	}
 
 	/**
@@ -67,6 +70,7 @@ class Core_Model_AffichageArticles{
 	 */
 	public function setContenu($contenu) {
 		$this->contenu = $contenu;
+		return $this;
 	}
 
 	/**
@@ -74,7 +78,14 @@ class Core_Model_AffichageArticles{
 	 */
 	public function setAuteur($auteur) {
 		$this->auteur = $auteur;
+		return $this;
 	}
-
+	
+	/*
+	 	public function setAuteur( Core_Model_Auteur $auteur) {
+		$this->auteur = $auteur;
+		retun $this;
+	} 
+	 */
 	
 }

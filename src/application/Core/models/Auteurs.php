@@ -32,6 +32,7 @@ class Core_Model_Auteurs{
 	 */
 	public function setId($id) {
 		$this->id = $id;
+		return $this;
 	}
 
 	/**
@@ -39,6 +40,7 @@ class Core_Model_Auteurs{
 	 */
 	public function setNom($nom) {
 		$this->nom = $nom;
+		return $this;
 	}
 
 	/**
@@ -46,6 +48,7 @@ class Core_Model_Auteurs{
 	 */
 	public function setPrenom($prenom) {
 		$this->prenom = $prenom;
+		return $this;
 	}
 
 
